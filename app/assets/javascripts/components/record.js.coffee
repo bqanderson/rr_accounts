@@ -19,6 +19,10 @@
       React.DOM.td null, amountFormat(@props.record.amount)
       React.DOM.td null,
         React.DOM.a
+          className: 'btn btn-default'
+          onClick: @handleTogle
+          'Edit'
+        React.DOM.a
           className: 'btn btn-danger'
           onClick: @handleDelete
           'Delete'
