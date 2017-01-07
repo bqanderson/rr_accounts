@@ -1,4 +1,9 @@
 @Record = React.createClass
+  getInitialState: ->
+    edit: false
+  handleTogle: (e) ->
+    e.preventDefault()
+    @setState edit: !@state.edit
   handleDelete: (e) ->
     e.preventDefault()
     $.ajax
